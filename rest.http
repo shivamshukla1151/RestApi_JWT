@@ -1,0 +1,5 @@
+GET  http://localhost:8787/auth
+
+###
+
+POST http://localhost:8787/auth
