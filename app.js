@@ -5,8 +5,10 @@ const createError = require("http-errors");
 const errorHandler = require("./middlewares/errorHandler");
 const app = express();
 require("./helpers/mongodbConnection");
+// const bodyParser = require("body-parser");
 
 app.use(express.json());
+// app.use(urlencoded({ extended: true }));
 app.use("/auth", routes);
 
 app.use(async (req, res, next) => {
